@@ -55,7 +55,8 @@ class ScaleTen{
 
         // Create the graph. These two calls are always required
         $graph = new Graph(500,400);
-        $graph->SetScale("textlin");
+        $graph->SetScale("textlin", 0, max(array_values($array_list)));
+        $graph->yaxis->scale->ticks->Set(1);
 
         $graph->SetShadow();
         $graph->img->SetMargin(40,30,20,40);
