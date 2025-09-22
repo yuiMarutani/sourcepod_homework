@@ -100,7 +100,9 @@ class ScaleTenQ2{
 
         //x軸のメモリを手動で調整
         $graph->xaxis->SetTickLabels(array("0-10", "11-20", "21-30", "31-40", "41-50", "51-60", "61-70","71-80", "81-90", "91-100"));
-        
+        if (file_exists($filename)) {
+            unlink($filename); // 既存ファイルを削除
+        }
         // Display the graph
         $graph->Stroke($filename);
         return $filename;

@@ -117,7 +117,6 @@ class ScaleFiveQ2{
         $title_x = "点数";
         $graph->xaxis->title->Set($title_x);
         $graph->xaxis->title->SetFont(FF_MINCHO);
-        $graph->xaxis->title->SetMargin(30);
 
         //y軸のタイトル
         $title_y = "人数";
@@ -152,6 +151,9 @@ class ScaleFiveQ2{
         ));
         
         // Display the graph
+        if (file_exists($filename)) {
+            unlink($filename); // 既存ファイルを削除
+        }
         $graph->Stroke($filename);
         return $filename;
     }

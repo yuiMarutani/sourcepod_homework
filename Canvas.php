@@ -59,6 +59,9 @@ class Canvas{
 
         $shape->Rectangle($xmin, $ymin, $xmax, $ymax);
         // Stroke the graph
+        if (file_exists($filename)) {
+            unlink($filename); // 既存ファイルを削除
+        }
         $g->Stroke($filename);
         return $filename;
     }

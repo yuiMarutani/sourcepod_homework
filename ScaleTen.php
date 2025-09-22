@@ -99,6 +99,9 @@ class ScaleTen{
         $graph->xaxis->SetTickLabels(array("0-9", "10-19", "20-29", "30-39", "40-49", "50-59", "60-69", "70-79","80-89", "90-99", "100"));
         
         // Display the graph
+        if(file_exists($filename)){
+            unlink($filename); // 既存ファイルを削除
+        }
         $graph->Stroke($filename);
         return $filename;
     }

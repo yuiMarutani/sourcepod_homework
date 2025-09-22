@@ -105,8 +105,8 @@ class ScaleFive{
         //x軸タイトル
         $title_x = "点数";
         $graph->xaxis->title->Set($title_x);
+        $graph->xaxis->title->Set($title_x);
         $graph->xaxis->title->SetFont(FF_MINCHO);
-        $graph->xaxis->title->SetMargin(30);
 
         //y軸のタイトル
         $title_y = "人数";
@@ -140,7 +140,9 @@ class ScaleFive{
             "95-99",
             "100"
         ));
-        
+        if(file_exists($filename)){
+            unlink($filename); // 既存ファイルを削除
+        }
         // Display the graph
         $graph->Stroke($filename);
         return $filename;
