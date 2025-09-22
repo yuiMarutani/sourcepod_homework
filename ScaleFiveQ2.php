@@ -59,7 +59,7 @@ class ScaleFiveQ2{
             }elseif($value===100){
                 $key= '96-100';
             }elseif($leftover==0 && $value<>0){
-                //10の倍数
+                //10の倍数、０以外
                 $start = (floor($value/10)-1)*10+6;
                 $key = "{$start}-" . ($start + 4);
             }elseif($leftover>=1 && $leftover<=5){
