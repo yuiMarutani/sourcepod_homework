@@ -106,56 +106,75 @@ require_once("Account.php");
         $records = $account_object->branchCommodityAccount();
         ?>
         <!--本店-->
-        <span>支店ごとの商品ランキング</span>
+        <span>支店ごとの商品ランキング</span><br>
         <span>本店</span>
         <table border="1" cellspacing="0">
             <tr>
+                <th>順位</th>
                 <th>商品ランキング</th>
                 <th>売上総額</th>
             </tr>
             <?php 
+                $count = 0;
                 $honten = $records[1];
                 foreach($honten as $k=>$v){
+                    $count++;
+                    if($v<>0){
             ?>
             <tr>
+                <td><?php echo $count;?></td>
                 <td><?php echo $k;?></td>
                 <td><?php echo number_format($v);?></td>
             </tr>
-            <?php } ?>
+            <?php }
+            } ?>
         </table>
         <!--支店A-->
         <span>支店A</span>
         <table border="1" cellspacing="0">
             <tr>
+                <th>順位</th>
                 <th>商品ランキング</th>
                 <th>売上総額</th>
             </tr>
             <?php 
                 $branchA = $records[0];
+                $count = 0;
                 foreach($branchA as $k=>$v){
+                    $count++;
+                    if($v<>0){
             ?>
             <tr>
+                <td><?php echo $count;?></td>
                 <td><?php echo $k;?></td>
                 <td><?php echo number_format($v);?></td>
             </tr>
-            <?php } ?>
+            <?php } 
+                 
+           }?>
         </table>
         <!--支店B-->
         <span>支店B</span>
         <table border="1"  cellspacing="0">
             <tr>
+                <th>順位</th>
                 <th>商品ランキング</th>
                 <th>売上総額</th>
             </tr>
             <?php 
+                $count = 0;
                 $branchB = $records[2];
                 foreach($branchB as $k=>$v){
+                    $count++;
+                    if($v<>0){
             ?>
             <tr>
+                <td><?php echo $count;?></td>
                 <td><?php echo $k;?></td>
                 <td><?php echo number_format($v);?></td>
             </tr>
-            <?php } ?>
+            <?php } 
+            }?>
         </table>
         <br/>
         <br/>
