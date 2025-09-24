@@ -6,7 +6,7 @@
 <ol>
   <li>C:\xampp\htdocs\sourcepod_homework　のようにXAMPPのパスが通っているところにフォルダを置く</li>
   <li>XAMPPのApacheの起動</li>
-  <li>ブラウザで　http://localhost//sourcepod_homework/(ファイル名)　を入力</li>
+  <li>ブラウザで　http://localhost/sourcepod_homework/(ファイル名)　を入力</li>
 </ol>
 【ファイルの説明】<br>
 Q1に対するファイル：　q1.php <br>
