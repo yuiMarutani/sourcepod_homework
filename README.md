@@ -13,7 +13,7 @@ Q1に対するファイル：　q1.php <br>
 Q2に対するファイル：　q2.php  <br>
 Q3に対するファイル：　q3.php  <br>
 Q4に対するファイル：　q4.php  <br>
-
+<br>
 <b>Dockerを使用する場合※docker desktopがインストールされている前提</b>
 <ol>
   <li>ローカルの環境にフォルダ（marutani等）を作成 例：C:\Users\yui_m\doc\marutani</li>
@@ -23,7 +23,9 @@ Q4に対するファイル：　q4.php  <br>
   <li>gitで取得したファイルがフォルダに入っているフォルダまで移動。例：cd sourcepod_homeworkに移動する</li>
   <li>docker desktopを起動</li>
   <li>dockerイメージの取得とコンテナの作成　例：docker-compose up -d --build</li>
-  <li>コンテナが立ち上がったらブラウザに　localhost:8080/q1.php のように入力</li>
+  <li>コンテナが立ち上がったらブラウザに　localhost:8080/q1.php のように入力<br>
+    Q1:q1.php Q2:q2.php Q3: q3.php Q4:q4.php
+  </li>
   <li>終了、見終わった場合docker desktop でコンテナをstop</li>
   <li>コンテナを立ち上げる場合もdocker desktopで立ち上げる</li>
 </ol>
