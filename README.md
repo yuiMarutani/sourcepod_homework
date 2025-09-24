@@ -20,7 +20,6 @@ Q4に対するファイル：　q4.php  <br>
   <li>windowsの場合powershellでパスを作成したフォルダに移動 例：C:\Users\yui_m が今のディレクトリの場合、cd doc\marutani <br>
     その後、powershellでgit clone　例：git clone https://github.com/yuiMarutani/sourcepod_homework.git
   </li>
-  <li>git pull origin master を実行（コードの取得）</li>
   <li>gitで取得したファイルがフォルダに入っているフォルダまで移動。例：cd sourcepod_homeworkに移動する</li>
   <li>docker desktopを起動</li>
   <li>dockerイメージの取得とコンテナの作成　例：docker-compose up -d --build</li>
