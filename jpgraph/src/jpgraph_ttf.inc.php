@@ -342,7 +342,8 @@ class TTF {
 	    	FS_NORMAL =>MINCHO_TTF_FONT,
 	    	FS_BOLD =>'',
 	    	FS_ITALIC =>'',
-	    	FS_BOLDITALIC =>'' ),
+	    	FS_BOLDITALIC =>''
+         ),
 
 	    FF_PMINCHO  =>  array(
 	    	FS_NORMAL =>PMINCHO_TTF_FONT,

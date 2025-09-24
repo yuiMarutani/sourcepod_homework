@@ -77,7 +77,9 @@ class ScaleTenQ2{
 
         // ...and add it to the graPH
         $graph->Add($gbplot);
-        ob_end_clean(); // 出力バッファを無効
+        if (ob_get_level() > 0) {
+            ob_end_clean();
+        }
         mb_http_output("pass"); // データをそのまま出力する
 
         //タイトル
