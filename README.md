@@ -20,7 +20,7 @@ Canvas.php: Q3のポリゴンの図を作成、pngイメージの作成。<br>
 ScaleFive.php：Q1の5点単位のグラフを表すクラス。<br>
 ScaleTen.php: Q1の10点単位のグラフを表すクラス。<br>
 ScaleFiveQ2.php：Q2の5点単位のグラフを表すクラス。<br>
-ScaleTenQ2.php: Q2の5点単位のグラフを表すクラス。<br>
+ScaleTenQ2.php: Q2の10点単位のグラフを表すクラス。<br>
 
 <h1>開発環境</h1><br>
 純正PHP×Jpgraph×XAMPP
