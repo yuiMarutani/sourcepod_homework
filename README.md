@@ -14,6 +14,20 @@ Q2に対するファイル：　q2.php  <br>
 Q3に対するファイル：　q3.php  <br>
 Q4に対するファイル：　q4.php  <br>
 
+<b>Dockerを使用する場合※docker desktopがインストールされている前提</b>
+<ol>
+  <li>ローカルの環境にフォルダ（marutani等）を作成 例：C:\Users\yui_m\doc\marutani</li>
+  <li>windowsの場合powershellでパスを作成したフォルダに移動 例：C:\Users\yui_m が今のディレクトリの場合、cd doc\marutani <br>
+    その後、powershellでgit clone　例：git clone https://github.com/yuiMarutani/sourcepod_homework.git
+  </li>
+  <li>git pull origin master を実行（コードの取得）</li>
+  <li>gitで取得したファイルがフォルダに入っているフォルダまで移動。例：cd sourcepod_homeworkに移動する</li>
+  <li>docker desktopを起動</li>
+  <li>dockerイメージの取得とコンテナの作成　例：docker-compose up -d --build</li>
+  <li>コンテナが立ち上がったらブラウザに　localhost:8080/q1.php のように入力</li>
+  <li>終了、見終わった場合docker desktop でコンテナをstop</li>
+  <li>コンテナを立ち上げる場合もdocker desktopで立ち上げる</li>
+</ol>
 <h1>使用ファイルの説明</h1>
 Account.php: Q4で使用。Q4各問に対してAccountクラスのメソッドを作成。<br>
 Canvas.php: Q3のポリゴンの図を作成、pngイメージの作成。<br>
